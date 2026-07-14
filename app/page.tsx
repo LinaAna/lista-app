@@ -8,8 +8,12 @@ export default function Home() {
     <div>
      <Titulo/>
      <Rodape/>
-     <CartaoPerfil/>
+     <div className="flex">
+        <CartaoPerfil/>
+        <CartaoPerfil/>
+        <CartaoPerfil/>
+     </div>
     </div>
- 
+  
   );
 }
