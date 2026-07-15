@@ -1,4 +1,5 @@
 import CardAluno from "@/components/CardAluno";
+import Header from "@/components/HeaderTurma";
 import Rodape from "@/components/Rodape";
 import Titulo from "@/components/Titulo";
 
@@ -6,6 +7,7 @@ import Titulo from "@/components/Titulo";
 export default function Home() {
   return (
     <div>
+     <Header/>
      <Titulo/>
      <div className="flex gap-6">
         <CardAluno/>
@@ -13,8 +15,15 @@ export default function Home() {
         <CardAluno/>
      </div>
      <div>
-      <img src="" alt="" />
-     </div>
+      <h2 className="text-xl font-bold text-pink-300">Turma 2026</h2>
+    </div>
+    <div>
+      <h1 className="text-xl font-bold text-pink-300">Mural da turma</h1>
+      <h5>Ana Carolina</h5>
+      <h5>Manoela</h5>
+      <h5>Pedro</h5>
+      <h5>Elisa</h5>
+    </div>
      <div>
       <Rodape/>
       </div>
