@@ -11,21 +11,18 @@ export default function Home() {
       <main className="flex-grow container mx-auto px-4 py-8 max-w-5xl">
         <Titulo />
         
-        {/* Mantida a estrutura de 3 Cards, agora com flex-wrap para não quebrar no celular */}
         <div className="flex flex-wrap gap-6 justify-center mt-8">
           <CardAluno />
           <CardAluno />
           <CardAluno />
         </div>
 
-        {/* Seção Turma */}
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 border-l-4 border-rose-500 pl-3">
             Turma 2026
           </h2>
         </div>
-
-        {/* Seção Mural */}
+        
         <div className="mt-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 p-6">
           <h1 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-4 flex items-center gap-2">
             <span>📌</span> Mural da turma
