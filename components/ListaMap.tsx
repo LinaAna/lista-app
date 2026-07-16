@@ -1,4 +1,4 @@
-export default function ListaNomes() {
+export default function ListaMap() {
     const nomes: string[] = ["Ana", "Bruno", "Carlos"];
     return (
       <ul>
