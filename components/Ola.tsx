@@ -1,3 +1,3 @@
-export default function Ola({ nome = "visitante" }) {
-  return <h2> Olá, {nome}!</h2>;
+export default function Ola({ visitante = "visitante" }) {
+  return <h2> Olá, {visitante}!</h2>;
 }

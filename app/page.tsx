@@ -1,6 +1,12 @@
+import Card from "@/components/Card";
 import CardAluno from "@/components/CardAluno";
 import Header from "@/components/HeaderTurma";
+import Idade from "@/components/Idade";
+import ListaMap from "@/components/ListaMap";
+import Ola from "@/components/Ola";
 import Rodape from "@/components/Rodape";
+import Saudacao from "@/components/Saudacao";
+import Status from "@/components/Status";
 import Titulo from "@/components/Titulo";
 
 export default function Home() {
@@ -22,13 +28,12 @@ export default function Home() {
             Turma 2026
           </h2>
         </div>
-        
+
         <div className="mt-6 bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 p-6">
           <h1 className="text-xl font-bold text-slate-800 dark:text-slate-100 mb-4 flex items-center gap-2">
             <span>📌</span> Mural da turma
           </h1>
           
-         
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <h5 className="bg-rose-50 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 font-medium py-2 px-4 rounded-lg text-center border border-rose-100 dark:border-rose-800 transition-colors hover:bg-rose-100 dark:hover:bg-rose-900/50 cursor-default">
               Ana Carolina
@@ -42,6 +47,22 @@ export default function Home() {
             <h5 className="bg-violet-50 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 font-medium py-2 px-4 rounded-lg text-center border border-violet-100 dark:border-violet-800 transition-colors hover:bg-violet-100 dark:hover:bg-violet-900/50 cursor-default">
               Elisa
             </h5>
+          </div>
+        </div>
+
+        {/* Seção de Componentes Demonstrativos */}
+        <div className="mt-12 space-y-6">
+          <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100 border-l-4 border-pink-500 pl-3">
+            Componentes
+          </h2>
+          
+          <div className="bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 p-6 space-y-4">
+            <Idade anos={20}/> 
+            <Status ativo/>
+            <Card nome="Goebel" cargo="Mecânico Industrial"/>
+            <Saudacao nome="Goebel"></Saudacao>
+            <ListaMap/>
+            <Ola visitante="Ana"/>
           </div>
         </div>
       </main>

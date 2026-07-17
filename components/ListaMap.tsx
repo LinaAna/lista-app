@@ -1,5 +1,5 @@
 export default function ListaMap() {
-    const nomes: string[] = ["Ana", "Bruno", "Carlos"];
+    const nomes: string[] = ["Ana", "Manuella", "Pedro"];
     return (
       <ul>
         {nomes.map((nome, index) => (
