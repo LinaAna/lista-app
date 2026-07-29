@@ -1,7 +1,8 @@
-export default function Caixa(children: any){
-    return <div className="">{children}</div>
+type CaixaProps = {
+    children: React.ReactNode;
+  };
+
+export default function Caixa({ children }: CaixaProps) {
+    return <div className="p-4 border rounded-lg">{children}</div>
 }
 
-/*export default function Caixa({ children }: { children: React.ReactNode }) {
-    return <div>{children}</div>;
-  }*/

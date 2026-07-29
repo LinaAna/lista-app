@@ -1,4 +1,8 @@
-export default function SecaoTurma(){
+type SecaoTurmaProps = {
+ children?: React.ReactNode;
+};
+
+export default function SecaoTurma({children}: SecaoTurmaProps) {
   return(
   <section className="container mx-auto px-4 py-8 max-w-4xl">
     <h2 className="bg-gradient-to-r from-rose-500 to-pink-600 rounded-2xl p-6 shadow-lg text-white font-bold text-2xl mb-4 transition-shadow hover:shadow-xl">Sobre a turma</h2>

@@ -1,3 +1,11 @@
+interface CardAlunoProps {
+  nome: string;
+  cargo: string;
+  periodo: string;
+  ativo: boolean;
+  vip: boolean;
+  habilidades: string[];
+}
 type Aluno = { id: number; nome: string; curso: string }
 
 type Props = {

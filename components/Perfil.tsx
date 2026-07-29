@@ -1,3 +1,7 @@
-export default function Perfil(props:{cargo: string}){
-    return <p>Seu cargo é {props.cargo}</p>
+interface Props {
+    cargo: string;
+  } 
+
+export default function Perfil( {cargo}: Props) { 
+    return <p>Seu cargo é {cargo}</p>
 }

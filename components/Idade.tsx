@@ -1,4 +1,6 @@
-
-export default function Idade(props : any){
-    return <p>Tenho {props.anos} anos</p>;
+type IdadeProps = {
+    anos: number;
+}
+export default function Idade({anos}: IdadeProps) {
+    return <p>Tenho {anos} anos</p>;
 }

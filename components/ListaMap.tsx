@@ -1,10 +1,11 @@
 export default function ListaMap() {
-    const nomes: string[] = ["Ana", "Manuella", "Pedro"];
-    return (
-      <ul>
-        {nomes.map((nome, index) => (
-          <li key={index}>{nome}</li>
-        ))}
-      </ul>
-    );
-  }
+  const nomes: string[] = ["Ana", "Manuella", "Pedro"];
+  
+  return (
+    <ul>
+      {nomes.map((nome) => (
+        <li key={nome}>{nome}</li>
+      ))}
+    </ul>
+  );
+}
