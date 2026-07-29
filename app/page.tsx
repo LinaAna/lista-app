@@ -55,7 +55,7 @@ export default function Home() {
             <span></span> Mural da turma
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['Ana Carolina', 'Manoela', 'Pedro', 'Elisa'].map((nome, index) => (
+            {['Ana Carolina', 'Manuella', 'Pedro', 'Elisa'].map((nome, index) => (
               <div 
                 key={nome}
                 className={`py-2 px-4 rounded-lg text-center font-medium border transition-colors cursor-default
