@@ -17,7 +17,7 @@ export default function CardAluno({ nome, cargo, periodo, ativo, vip, habilidade
       <p>{cargo}</p>
       <p>Período: {periodo}</p>
       <p>Status: {ativo ? 'Ativo' : 'Inativo'}</p>
-      <p>Presença: {presenca ? 'Presente' : 'Ausente'}</p>
+      <p>Presença: {presenca ? '🟢Presente ' : '⚪Ausente'}</p>
       <p>Nota: {nota || 0}</p>   
       <p>Habilidades:</p>
       <ul>
