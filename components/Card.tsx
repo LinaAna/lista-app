@@ -1,3 +1,8 @@
+type CardProps = {
+    nome: string;
+    cargo: string;
+  };
+
 export default function Card({ nome, cargo }: { nome: string; cargo: string }) {
     return (
       <div>

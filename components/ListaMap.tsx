@@ -1,3 +1,7 @@
+type ListaMapProps = {
+  nomes: string[];
+};
+
 export default function ListaMap() {
   const nomes: string[] = ["Ana", "Manuella", "Pedro"];
   
