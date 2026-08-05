@@ -3,6 +3,12 @@ type SaudacaoProps = {
 }
 
 export default function Saudacao(props:{nome: string}){    
-    return <h1 className="">Olá, {props.nome} </h1>
-    
+    return 
+    <button
+    className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold px-4 py-2 rounded-lg"
+    onClick={() => alert("Olá, turma!")}>
+    Saudar
+  </button>
+
 }
+    
