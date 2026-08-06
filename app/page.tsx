@@ -7,6 +7,9 @@ import TabelaAlunos from "@/components/TabelaAlunos";
 import Contador from "@/components/Contador";
 import Card from "@/components/Card";
 import CardAluno from "@/components/CardAluno";
+import Toggle from "@/components/Toggle";
+import Saudacao from "@/components/Saudacao";
+import Input from "@/components/Input";
 
 export default function Home() {
   const alunosTeste = [
@@ -27,7 +30,7 @@ export default function Home() {
       </section>
       <section>
         <h2>Mural da turma</h2>
-        <Contador alunosMatriculados={11}/>        
+              
         <ListaMap />
       </section>
 
@@ -40,7 +43,12 @@ export default function Home() {
         <h2>Tabela de Alunos</h2>
         <TabelaAlunos alunos={alunosTeste} />
       </section>
-
+      <section>
+        <Toggle/>
+        <Saudacao nome="Ana"/>
+        <Contador alunosMatriculados={11}/>  
+        <Input/>
+      </section>
       <Rodape />
     </main>
   );
